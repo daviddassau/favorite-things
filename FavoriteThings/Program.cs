@@ -10,6 +10,20 @@ namespace FavoriteThings
     {
         static void Main(string[] args)
         {
+
+            var movies = new List<Movie>
+            {
+                new Movie { MovieTitle = "Fight Club", Favorite = true },
+                new Movie { MovieTitle = "The Shawshank Redemption", Favorite = false },
+                new Movie { MovieTitle = "Star Wars: The Force Awakens", Favorite = false }
+            };
+
+            foreach (var movie in movies)
+            {
+                Console.WriteLine($"{movie.MovieTitle}");
+                Console.WriteLine(movie.DavidsFavoriteMovie());
+            }
+
         }
     }
 }

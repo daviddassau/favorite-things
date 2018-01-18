@@ -19,51 +19,44 @@ namespace FavoriteThings
                 : $"{MovieTitle} is still a good movie, but it's not David's favorite.";
         }
 
-        //public string ForgeASickNote()
-        //{
-        //    return Sick
-        //        ? $"Please excuse {Name} from class today because they are very sick."
-        //        : $"{Name}, you still have to go to school, quit faking. Love mom.";
-        //}
+        protected string _starwars;
+        public string starwars
+        {
+            get
+            {
+                return _starwars;
+            }
+            set
+            {
+                _starwars = value;
+            }
+        }
 
-        //protected string _starWars;
-        //public string StarWars
-        //{
-        //    get
-        //    {
-        //        return _starWars;
-        //    }
-        //    set
-        //    {
-        //        _starWars = value;
-        //    }
-        //}
+        protected string _startrek;
+        public string startrek
+        {
+            get
+            {
+                return _startrek;
+            }
+            set
+            {
+                _startrek = value;
+            }
+        }
 
-        //protected string _starTrek;
-        //public string StarTrek
-        //{
-        //    get
-        //    {
-        //        return _starTrek;
-        //    }
-        //    set
-        //    {
-        //        _starTrek = value;
-        //    }
-        //}
+        public movie()
+        {
+            this._starwars = "5 stars";
+            this._startrek = "4 stars";
+        }
 
-        //public Movie()
-        //{
-        //    this._starWars = "5 stars";
-        //    this._starTrek = "4 stars";
-        //}
-
-        //public string GetStarWarsCharacter(bool hanSoloIsDead)
-        //{
-        //    if (hanSoloIsDead == true)
-        //        return "Han Solo died in The Force Awakens";
-        //    else
-        //        return "Han Solo is definitely still alive. Kylo Ren definitely didn't kill him.";
-        //}
+        public string getstarwarscharacter(bool hansoloisdead)
+        {
+            if (hansoloisdead == true)
+                return "han solo died in the force awakens";
+            else
+                return "han solo is definitely still alive. kylo ren definitely didn't kill him.";
+        }
     }
 }

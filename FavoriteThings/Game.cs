@@ -8,6 +8,16 @@ namespace FavoriteThings
 {
     class Game
     {
+        public string GameTitle { get; set; }
+        public bool OffensiveGame { get; set; }
+
+        public string TheMoreOffensiveGame()
+        {
+            return OffensiveGame
+                ? $"{GameTitle} is an offensive game. You should only play this if you're a terrible person."
+                : $"{GameTitle} is a family game, meant for everyone.";
+        }
+
         protected string _cardsAgainstHumanity;
         public string CardsAgainstHumanity
         {

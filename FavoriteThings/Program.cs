@@ -24,6 +24,14 @@ namespace FavoriteThings
                 Console.WriteLine(movie.DavidsFavoriteMovie());
             }
 
+
+            var books = new List<Book>
+            {
+                new Book { BookTitle = "Haunted", Favorite = true },
+                new Book { BookTitle = "Haunted", Favorite = true },
+                new Book { BookTitle = "Haunted", Favorite = true }
+            };
+
         }
     }
 }

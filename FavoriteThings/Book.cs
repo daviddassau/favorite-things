@@ -8,6 +8,16 @@ namespace FavoriteThings
 {
     class Book
     {
+        public string BookTitle { get; set; }
+        public bool Favorite { get; set; }
+
+        public string DavidsFavoriteBook()
+        {
+            return Favorite
+                ? $"{BookTitle} is David's favorite book"
+                : $"{BookTitle} is a great book. However, it is not David's favorite book.";
+        }
+
         protected string _fightClub;
         public string FightClub
         {
